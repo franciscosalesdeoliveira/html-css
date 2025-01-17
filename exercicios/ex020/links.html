@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilizando links</title>
+    <style>
+      /* Seletores Personalizados
+        #  = id
+        .  = class
+        :  = pseudo-classes
+        :: = pseudo-elementos
+        >  = filho
+        */
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: yellow;
+      }
+      a:active {
+        color: blue;
+      }
+      .especial {
+        color: purple;
+      }
+      .especial::before {
+        content: "⇒ ";
+      }
+      .especial::after {
+        content: " ⇐";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estilizando links</h1>
+    <ul>
+      <li>
+        <a href="https://www.google.com.br" target="_blank" class="especial"
+          >Google</a
+        >
+      </li>
+      <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+      <li>
+        <a href="https://www.cursoemvideo.com" target="_blank"
+          >Curso em Vídeo</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

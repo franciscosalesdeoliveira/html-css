@@ -1,0 +1,22 @@
+.artigos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.artigo {
+  border: 1px solid black;
+  width: 30%;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+  text-align: justify !important;
+}
+
+h1 {
+  text-align: center;
+}
+
+mark{
+    background-color: red;
+}

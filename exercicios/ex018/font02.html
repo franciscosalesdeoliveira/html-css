@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes Externas</title>
+    <style>
+      @font-face {
+        font-family: "October Crow";
+        src: url("fonts/October Crow.ttf") format(truetype),
+          url("fonts/Black Witcher.otf") format(opentype);
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Black Witcher";
+        src: url("fonts/Black Witcher.otf") format(opentype);
+        font-weight: normal;
+        font-style: normal;
+
+        /* se for inserir outro tipo de fonte na frente do format() adicione ,url() format(); */
+        /* tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg*/
+      }
+      body {
+        font-family: "October Crow", sans-serif;
+      }
+      h1 {
+        font-family: "Black Witcher", sans-serif;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Titulo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+      aperiam magni laborum vero saepe, doloribus quasi dignissimos incidunt quo
+      delectus libero rerum ab qui modi quidem officia animi suscipit ipsum.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quisquam
+      provident sapiente recusandae rerum eos necessitatibus, sunt natus rem
+      distinctio ex eum laborum optio et deserunt deleniti aut quam adipisci.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur,
+      dolorum aliquam inventore non recusandae. Odit adipisci quae ullam dolorem
+      nihil quisquam maxime modi magni, expedita velit, ducimus possimus saepe.
+    </p>
+  </body>
+</html>
