@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabelas</title>
-</head>
-<body>
+    <style>
+      table {
+        width: 400px;
+        border-collapse: collapse;
+        
+      }
+
+      tr.linha {
+        background-color: #b1b1b1;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;/*alinhamento horizontal*/
+        vertical-align: bottom;/*alinhamento vertical*/
+      }
+
+      td.dado {
+        background-color: #b1b1b1;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Minha primeira tabela</h1>
-</body>
+    <!--Hierarquia de tabelas simples
+        TABLE = tabela
+            TABLE ROW = linha
+                TABLE HEADER = cabecalho
+                TABLE DATA = dado-->
+
+    <table> <!--Primeira linha-->
+      <tr>
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+      </tr>
+      <tr>
+        <td>A2</td>
+        <td>B2</td>
+        <td class="">C2</td>
+      </tr>
+      <tr class="">
+        <td>A3</td>
+        <td>B3</td>
+        <td class="">C3</td>
+      </tr>
+      <tr>
+        <td>A4</td>
+        <td>B4</td>
+        <td class="">C4</td>
+      </tr>
+  </body>
 </html>
